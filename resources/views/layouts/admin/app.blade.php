@@ -33,13 +33,13 @@
 <body class="@yield('body')">
     <div class="wrapper">
         @if(Auth::check())
-        @include('layouts.header')
+        @include('layouts.admin.header')
 
-        @include('layouts.sidebar')
+        @include('layouts.admin.sidebar')
 
         @yield('content')
 
-        @include('layouts.footer')
+        @include('layouts.admin.footer')
         @else
         @yield('content')
         @endif
