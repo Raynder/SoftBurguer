@@ -23,7 +23,13 @@
 </head>
 
 <body>
-    @yield('content')
+    @yield('header')
+
+    <main>
+        @yield('content')    
+    </main>
+
+    @include('layouts.app.footer')
 </body>
 <script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
 <script src="{{ asset('plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>

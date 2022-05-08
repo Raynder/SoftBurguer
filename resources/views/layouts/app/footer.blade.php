@@ -4,11 +4,11 @@
             <div class="nav-items">
                 <div class="nav-item">
                     <span class="las la-home"></span>
-                    <p>Home</p>
+                    <p>Inicio</p>
                 </div>
                 <div class="nav-item">
                     <span class="las la-shopping-bag"></span>
-                    <p>Order</p>
+                    <p>Perfil</p>
                 </div>
             </div>
             <div class="nav-item-main">
@@ -19,11 +19,11 @@
             <div class="nav-items">
                 <div class="nav-item">
                     <span class="las la-gift"></span>
-                    <p>Offer</p>
+                    <p>Add</p>
                 </div>
                 <div class="nav-item">
                     <span class="las la-ellipsis-h"></span>
-                    <p>More</p>
+                    <p>Add</p>
                 </div>
             </div>
         </div>

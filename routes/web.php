@@ -27,5 +27,6 @@ Route::prefix('admin')->group(function () {
 Route::prefix('app')->group(function () {
     Route::middleware('App\Http\Middleware\Authenticate')->group(function () {
         Route::get('/', [App\Http\Controllers\AppController::class, 'index'])->name('app');
+        Route::get('/empresas', [App\Http\Controllers\EmpresasController::class, 'index'])->name('empresas');
     });
 });
