@@ -16,7 +16,7 @@ mix.js('resources/js/app.js', 'public/js/app.js')
 mix.css('resources/css/app.css', 'public/css/app.css');
 
 // Mix configuration app
-mix.copy('resources/css/style.css', 'public/css/app.css')
+mix.copy('resources/css/style.css', 'public/css/style.css')
     .copy('resources/css/line-awesome.min.css', 'public/css/line-awesome.min.css')
 
 // Fim

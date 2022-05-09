@@ -20,6 +20,9 @@ Route::prefix('admin')->group(function () {
             Route::get('/update/{id}', [App\Http\Controllers\GruposController::class, 'update'])->name('grupos.update');
             Route::get('/destroy/{id}', [App\Http\Controllers\GruposController::class, 'destroy'])->name('grupos.destroy');
         });
+
+        Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('perfil');
+        Route::post('/perfil', [App\Http\Controllers\HomeController::class, 'update'])->name('perfil.update');
     });
 
 });
