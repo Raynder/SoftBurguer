@@ -11291,3 +11291,7 @@ textarea.form-control-lg {
     position: relative;
     transform: translateY(-50%);
 }
+
+.hidden {
+    display: none;
+}

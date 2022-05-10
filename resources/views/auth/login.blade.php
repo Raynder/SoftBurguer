@@ -60,10 +60,10 @@
             </form>
 
             <p class="mb-1">
-                <a href="forgot-password.html">Esqueci minha senha</a>
+                <a href="{{ route('password.request') }}">Esqueci minha senha</a>
             </p>
             <p class="mb-0">
-                <a href="register.html" class="text-center">Criar conta</a>
+                <a href="{{ route('register') }}" class="text-center">Criar uma conta</a>
             </p>
         </div>
         <!-- /.login-card-body -->

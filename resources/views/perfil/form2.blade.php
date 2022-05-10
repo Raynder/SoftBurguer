@@ -8,22 +8,22 @@
     </div>
 
     <div class="form-group row">
-        <label for="foto" class="col-sm-2 col-form-label">Imagem</label>
+        <label for="_foto" class="col-sm-2 col-form-label">Imagem</label>
         <div class="col-sm-6">
-            <input type="file" class="form-control" id="_foto" name="_foto">
-        </div>
-        <div class="col-sm-4">
-            <img src="{{ isset($user->foto) ? $user->foto : '' }}" class="img-thumbnail" width="100" height="100">
+            <input type="file" class="hidden" id="_foto" name="_foto">
+            <label for="_foto">
+                <img for="_foto" src="{{ isset($user->foto) ? asset($user->foto) : asset('img/admin/avatar.png') }}" class="img-thumbnail" width="100" height="100">
+            </label>
         </div>
     </div>
 
     <div class="form-group row">
-        <label for="capa" class="col-sm-2 col-form-label">Capa</label>
+        <label for="_capa" class="col-sm-2 col-form-label">Capa</label>
         <div class="col-sm-6">
-            <input type="file" class="form-control" id="_capa" name="_capa">
-        </div>
-        <div class="col-sm-4">
-        <img src="{{ isset($user->capa) ? $user->capa : '' }}" class="img-thumbnail" width="200" height="100">
+            <input type="file" class="hidden" id="_capa" name="_capa">
+            <label for="_capa">
+                <img for="_capa" src="{{ isset($user->capa) ? asset($user->capa) : asset('img/admin/capa.png') }}" class="img-thumbnail" width="200" height="100">
+            </label>
         </div>
     </div>
 

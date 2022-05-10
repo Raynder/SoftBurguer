@@ -23,6 +23,8 @@ Route::prefix('admin')->group(function () {
 
         Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('perfil');
         Route::post('/perfil', [App\Http\Controllers\HomeController::class, 'update'])->name('perfil.update');
+        Route::post('/perfil/foto', [App\Http\Controllers\HomeController::class, 'foto'])->name('perfil.foto');
+        Route::post('/perfil/capa', [App\Http\Controllers\HomeController::class, 'capa'])->name('perfil.capa');
     });
 
 });
